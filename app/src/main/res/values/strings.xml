@@ -1,0 +1,58 @@
+<resources>
+
+    <string name="app_name">华西</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="bottom_item_one">提醒事项</string>
+    <string name="bottom_item_two">咨询</string>
+    <string name="bottom_item_three">医疗咨讯</string>
+    <string name="bottom_item_four">设置</string>
+    <string name="bottom_item_five">设置</string>
+    
+    <string name="button_text">显示图标</string>
+    
+    <string name="workbench_title">咨询</string>
+    <string name="workbench_home_page">首  页</string>
+    <string name="workbench_add_task">新增任务</string>
+    
+    <string name="set1">用户信息</string>
+    <string name="set2">推送设置</string>
+    <string name="set3">免打扰设置</string>
+    <string name="set4">意见反馈</string>
+    <string name="set5">切换账户</string>
+    <string name="set6">关于</string>
+     
+    <string name="indicate_value">99</string>
+        <string name="login_user">用户</string>
+        <string name="login_password">密码</string>
+        <string name="login">登陆</string>
+        <string name="message">信息</string>
+       <string name="feedback">电话反馈</string>
+       <string name="feedback_ps">华西泌尿科友情提供</string>
+       
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+         <string-array name="title">
+        <item >走路锻炼法</item>
+        <item >脑力劳动者如何补充营养</item>
+        <item >熬夜伤肝，四大妙招帮你补</item>
+         <item >10大招数帮你远离颈椎病</item>
+     </string-array>
+    
+    <string-array name="content">
+        <item >维持好身材,预防慢性疾病</item>
+        <item >人脑的重量虽然只占人体重量的2%左右，但大脑消耗的能量却占全身消耗能量的20%</item>
+        <item >熬夜族的营养摄取应该注意两方面，一是保护自己的身体，一是在夜间工作时保持最佳状况。</item>
+        <item >不要长时间保持同一个姿势，特别是久坐不动的办公室人士，要经常变换一下姿势，每隔1小时就应该运动一下</item>
+    </string-array>
+    
+</resources>

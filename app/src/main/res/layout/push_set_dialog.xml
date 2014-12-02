@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0e0" >
+<RelativeLayout 
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+    	android:layout_height="wrap_content">
+        <TextView 
+            android:layout_width="fill_parent"
+    		android:layout_height="44dp"
+    		android:gravity="center"
+    		android:textSize="18sp"
+    		android:background="#486a9a"
+    		android:textColor="@android:color/white"
+    		android:text="推送设置"/>
+
+    </RelativeLayout>
+<ScrollView
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/rl_top"
+    android:background="@drawable/tiledstripes" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="20dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#9C9C9C"
+            android:orientation="vertical"
+            android:padding="20dip" >
+
+         <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置Tag和Alias "
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/corners_bg"
+            android:orientation="vertical"
+            android:paddingBottom="20dip"
+            android:paddingTop="20dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+              >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Tag :" />
+
+                <EditText
+                    android:id="@+id/et_tag"
+                    style="@style/push_tag"
+                    android:layout_width="160dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/bt_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置Tag  "
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alias:" />
+
+                <EditText
+                    android:id="@+id/et_alias"
+                    style="@style/push_alias"
+                    android:layout_width="160dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/bt_alias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置用户别名"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:background="#9C9C9C"
+            android:orientation="vertical"
+             android:padding="20dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="定制通知栏样式"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/corners_bg"
+            android:orientation="vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+              >
+
+            <Button
+                android:id="@+id/setStyle1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="定制通知栏样式：Basic" />
+
+            <Button
+                android:id="@+id/setStyle2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="定制通知栏样式：Custom" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

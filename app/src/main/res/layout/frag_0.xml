@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:background="#486a9a"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="提醒事项"
+            android:textColor="@color/title_color_white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/relative_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_title"
+            android:background="#f0f0e0" >
+
+           
+
+            <ListView
+                android:id="@+id/android:list"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="#f0f0e0"
+              
+                android:layout_below="@+id/relativetitle" />
+
+            <RelativeLayout
+                android:id="@+id/relativetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="#f0f0e0"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sickness_title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                   />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/sickness_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" 
+                    android:textSize="20sp" 
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+               
+
+            </RelativeLayout>
+          <TextView android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/relativetitle"
+                android:background="@android:color/darker_gray"/>
+          
+        </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#486a9a"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/logbg"
+        android:paddingBottom="50dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="88dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="90dp"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/username"
+                android:layout_alignParentBottom="true"
+                android:inputType="textPassword|textPersonName" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/username"
+                android:text="@string/login_user"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/password"
+                android:layout_alignBottom="@+id/password"
+                android:layout_alignLeft="@+id/textView1"
+                android:text="@string/login_password"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/username"
+                android:padding="0dip"
+                android:text="@string/login" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/login"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:padding="0dip"
+                android:text="返回" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:text="华西医疗"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
